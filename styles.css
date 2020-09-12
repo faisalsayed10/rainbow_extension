@@ -1,7 +1,8 @@
 .rainbow {
   animation: rainbow 2s;
   animation-iteration-count: infinite;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 @keyframes rainbow {

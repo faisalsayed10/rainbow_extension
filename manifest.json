@@ -3,14 +3,16 @@
   "name" : "Kool Extension",
   "version" : "1.0.0",
   "description" : "I am kool",
-  "icons" : {
-    "128" : "icon128.png",
-    "48" : "icon48.png",
-    "16" : "icon16.png"
+  "page_action": {
+    "default_icon": {         
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
   },
   "content_scripts" : [
     {
-      "matches" : ["<all_urls>"],
+      "matches" : ["https://*.hackclub.com/*"],
       "js": ["popup.js"],
       "css": ["styles.css"]
     }
