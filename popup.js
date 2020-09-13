@@ -1,9 +1,7 @@
 replaceText(document.body);
-alert("Hello and Welcome! btw Hack Club is Kool! ")
+alert("Hello and Welcome! btw Hack Club is Kool!");
 
 function replaceText(element) {
-
-
   if (element.hasChildNodes()) {
     element.childNodes.forEach(replaceText);
   } else if (element.nodeType === Text.TEXT_NODE) {
